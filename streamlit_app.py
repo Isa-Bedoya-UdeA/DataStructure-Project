@@ -18,8 +18,10 @@ with st.form("character_form", clear_on_submit=True):
     skills = st.pills("Habilidades", ["Ataque físico", "Ataque mágico", "Sigilo", "Curación", "Guardia", "Invocación", "Esquivar", "Arquería", "Combate cuerpo a cuerpo"], selection_mode="multi") 
     st.caption("Debes seleccionar 6 habilidades distintas.")
 
-    submitted = st.form_submit_button("Crear personaje") ## , on_click=create_character(name, class_rpg, race, skills)
+    submitted = st.form_submit_button("Crear personaje")
     
     if submitted:
         st.success('**¡Personaje creado exitosamente!**')
-        st.write(submitted)
+        st.write("### Detalles del Personaje:")
+        character = create_character(name, class_rpg,race, skills)
+        st.json(character)
