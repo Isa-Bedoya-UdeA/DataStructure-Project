@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Pablito",
+        "class": "Guerrero",
+        "race": "Humano",
+        "skills": [
+            "Ataque físico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Pepita",
+        "class": "Paladín",
+        "race": "Orco",
+        "skills": [
+            "Esquivar",
+            "Ataque mágico",
+            "Combate cuerpo a cuerpo",
+            "Sigilo"
+        ]
+    }
+]
