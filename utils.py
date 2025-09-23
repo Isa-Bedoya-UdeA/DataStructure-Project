@@ -3,6 +3,7 @@ import os
 
 DATA_FILE = "characters.json"
 
+# UTILS
 def load_characters():
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:

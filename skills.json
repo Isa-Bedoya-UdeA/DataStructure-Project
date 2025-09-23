@@ -1,0 +1,74 @@
+{
+  "Ataque físico": {
+    "description": "Un ataque básico con armas físicas.",
+    "type": "Daño",
+    "target": "Único",
+    "value": 15,
+    "rarity": "Primary",
+    "source": "General"
+  },
+  "Ataque mágico": {
+    "description": "Un poderoso ataque con magia.",
+    "type": "Daño",
+    "target": "Múltiple",
+    "value": 20,
+    "rarity": "Primary",
+    "source": "Class"
+  },
+  "Sigilo": {
+    "description": "Permite ocultarse de enemigos.",
+    "type": "Defensa",
+    "target": "Propio",
+    "value": 0,
+    "rarity": "Secondary",
+    "source": "Class"
+  },
+  "Curación": {
+    "description": "Restaura puntos de vida.",
+    "type": "Cura",
+    "target": "Aliado",
+    "value": 25,
+    "rarity": "Primary",
+    "source": "Class"
+  },
+  "Guardia": {
+    "description": "Aumenta la defensa temporalmente.",
+    "type": "Defensa",
+    "target": "Propio",
+    "value": 10,
+    "rarity": "Secondary",
+    "source": "General"
+  },
+  "Invocación": {
+    "description": "Invoca criaturas para el combate.",
+    "type": "Daño",
+    "target": "Múltiple",
+    "value": 30,
+    "rarity": "Primary",
+    "source": "Class"
+  },
+  "Esquivar": {
+    "description": "Aumenta la probabilidad de evitar ataques.",
+    "type": "Defensa",
+    "target": "Propio",
+    "value": 0,
+    "rarity": "Secondary",
+    "source": "General"
+  },
+  "Arquería": {
+    "description": "Disparo preciso con arco.",
+    "type": "Daño",
+    "target": "Único",
+    "value": 18,
+    "rarity": "Primary",
+    "source": "Class"
+  },
+  "Combate cuerpo a cuerpo": {
+    "description": "Ataque directo con golpes físicos.",
+    "type": "Daño",
+    "target": "Único",
+    "value": 12,
+    "rarity": "Secondary",
+    "source": "General"
+  }
+}
