@@ -1,22 +1,2129 @@
 [
     {
-        "name": "Pablito",
-        "class": "Guerrero",
-        "race": "Humano",
+        "name": "Tyrande_1",
+        "class": "Nigromante",
+        "race": "Enano",
         "skills": [
+            "Ataque mágico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Sylvanas_2",
+        "class": "Arquero",
+        "race": "Duende",
+        "skills": [
+            "Curación",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Arthas_3",
+        "class": "Nigromante",
+        "race": "Orco",
+        "skills": [
+            "Sigilo",
+            "Ataque mágico",
+            "Curación",
+            "Esquivar",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Malfurion_4",
+        "class": "Mago",
+        "race": "Centauro",
+        "skills": [
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Illidan_5",
+        "class": "Nigromante",
+        "race": "Elfo",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Arthas_6",
+        "class": "Bárbaro",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque mágico",
+            "Invocación",
+            "Curación",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Anduin_7",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Sylvanas_8",
+        "class": "Druida",
+        "race": "Orco",
+        "skills": [
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Tyrande_9",
+        "class": "Monje",
+        "race": "Centauro",
+        "skills": [
+            "Arquería",
+            "Guardia",
+            "Ataque mágico",
+            "Ataque físico",
+            "Esquivar",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Illidan_10",
+        "class": "Mago",
+        "race": "Centauro",
+        "skills": [
+            "Invocación",
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Ataque físico",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Valeera_11",
+        "class": "Monje",
+        "race": "Elfo",
+        "skills": [
+            "Ataque físico",
+            "Esquivar",
+            "Ataque mágico",
+            "Curación",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_12",
+        "class": "Guerrero",
+        "race": "Enano",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Curación",
+            "Invocación",
+            "Sigilo",
+            "Guardia",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Malfurion_13",
+        "class": "Druida",
+        "race": "Orco",
+        "skills": [
+            "Sigilo",
+            "Curación",
+            "Ataque mágico",
+            "Guardia",
+            "Arquería",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Malfurion_14",
+        "class": "Paladín",
+        "race": "Centauro",
+        "skills": [
+            "Curación",
+            "Sigilo",
+            "Arquería",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Valeera_15",
+        "class": "Monje",
+        "race": "Enano",
+        "skills": [
+            "Ataque mágico",
+            "Esquivar",
+            "Sigilo",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Valeera_16",
+        "class": "Paladín",
+        "race": "Centauro",
+        "skills": [
+            "Ataque físico",
+            "Esquivar",
+            "Invocación",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_17",
+        "class": "Nigromante",
+        "race": "Elfo",
+        "skills": [
+            "Arquería",
+            "Sigilo",
+            "Invocación",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Sylvanas_18",
+        "class": "Druida",
+        "race": "Duende",
+        "skills": [
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Arthas_19",
+        "class": "Guerrero",
+        "race": "Elfo",
+        "skills": [
+            "Esquivar",
+            "Invocación",
+            "Sigilo",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Sylvanas_20",
+        "class": "Monje",
+        "race": "Gnomo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Curación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Kael_21",
+        "class": "Mago",
+        "race": "Gnomo",
+        "skills": [
+            "Esquivar",
+            "Invocación",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Tyrande_22",
+        "class": "Arquero",
+        "race": "Enano",
+        "skills": [
+            "Ataque mágico",
+            "Guardia",
+            "Ataque físico",
+            "Arquería",
+            "Invocación",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Kael_23",
+        "class": "Asesino",
+        "race": "Sirena",
+        "skills": [
+            "Guardia",
+            "Arquería",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Malfurion_24",
+        "class": "Monje",
+        "race": "Cíclope",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Jaina_25",
+        "class": "Arquero",
+        "race": "Cíclope",
+        "skills": [
+            "Invocación",
+            "Esquivar",
+            "Ataque mágico",
+            "Arquería",
+            "Sigilo",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Thrall_26",
+        "class": "Guerrero",
+        "race": "Duende",
+        "skills": [
+            "Ataque mágico",
+            "Invocación",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Malfurion_27",
+        "class": "Bárbaro",
+        "race": "Sirena",
+        "skills": [
+            "Sigilo",
+            "Guardia",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Kael_28",
+        "class": "Bárbaro",
+        "race": "Elfo",
+        "skills": [
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Anduin_29",
+        "class": "Asesino",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Invocación",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Malfurion_30",
+        "class": "Guerrero",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque físico",
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Kael_31",
+        "class": "Asesino",
+        "race": "Cíclope",
+        "skills": [
+            "Arquería",
+            "Esquivar",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Tyrande_32",
+        "class": "Guerrero",
+        "race": "Sirena",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Curación",
+            "Ataque físico",
+            "Invocación",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Jaina_33",
+        "class": "Paladín",
+        "race": "Sirena",
+        "skills": [
+            "Invocación",
             "Ataque físico",
             "Sigilo"
         ]
     },
     {
-        "name": "Pepita",
+        "name": "Jaina_34",
+        "class": "Arquero",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque físico",
+            "Sigilo",
+            "Arquería",
+            "Esquivar",
+            "Curación",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Valeera_35",
+        "class": "Bárbaro",
+        "race": "Duende",
+        "skills": [
+            "Arquería",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_36",
+        "class": "Clérigo",
+        "race": "Sirena",
+        "skills": [
+            "Ataque físico",
+            "Invocación",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Illidan_37",
+        "class": "Nigromante",
+        "race": "Centauro",
+        "skills": [
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Illidan_38",
+        "class": "Guerrero",
+        "race": "Enano",
+        "skills": [
+            "Invocación",
+            "Arquería",
+            "Ataque físico",
+            "Esquivar",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Jaina_39",
+        "class": "Arquero",
+        "race": "Humano",
+        "skills": [
+            "Ataque mágico",
+            "Sigilo",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Sylvanas_40",
+        "class": "Guerrero",
+        "race": "Cíclope",
+        "skills": [
+            "Esquivar",
+            "Curación",
+            "Sigilo",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Kael_41",
+        "class": "Guerrero",
+        "race": "Centauro",
+        "skills": [
+            "Arquería",
+            "Invocación",
+            "Sigilo",
+            "Esquivar",
+            "Ataque mágico",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Tyrande_42",
+        "class": "Mago",
+        "race": "Gnomo",
+        "skills": [
+            "Curación",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Valeera_43",
+        "class": "Monje",
+        "race": "Gnomo",
+        "skills": [
+            "Curación",
+            "Invocación",
+            "Ataque mágico",
+            "Sigilo",
+            "Arquería",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Arthas_44",
+        "class": "Druida",
+        "race": "Humano",
+        "skills": [
+            "Ataque mágico",
+            "Arquería",
+            "Ataque físico",
+            "Combate cuerpo a cuerpo",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Malfurion_45",
+        "class": "Nigromante",
+        "race": "Humano",
+        "skills": [
+            "Guardia",
+            "Combate cuerpo a cuerpo",
+            "Esquivar",
+            "Invocación",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Illidan_46",
+        "class": "Clérigo",
+        "race": "Humano",
+        "skills": [
+            "Arquería",
+            "Sigilo",
+            "Invocación",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Arthas_47",
+        "class": "Asesino",
+        "race": "Elfo",
+        "skills": [
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Malfurion_48",
+        "class": "Mago",
+        "race": "Cíclope",
+        "skills": [
+            "Sigilo",
+            "Arquería",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Valeera_49",
+        "class": "Monje",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque mágico",
+            "Combate cuerpo a cuerpo",
+            "Curación",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Thrall_50",
+        "class": "Arquero",
+        "race": "Humano",
+        "skills": [
+            "Ataque mágico",
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Anduin_51",
+        "class": "Nigromante",
+        "race": "Enano",
+        "skills": [
+            "Arquería",
+            "Sigilo",
+            "Invocación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Kael_52",
+        "class": "Druida",
+        "race": "Humano",
+        "skills": [
+            "Guardia",
+            "Curación",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_53",
+        "class": "Clérigo",
+        "race": "Enano",
+        "skills": [
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Arthas_54",
+        "class": "Bárbaro",
+        "race": "Gnomo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Guardia",
+            "Curación",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Malfurion_55",
+        "class": "Druida",
+        "race": "Duende",
+        "skills": [
+            "Esquivar",
+            "Guardia",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Jaina_56",
+        "class": "Arquero",
+        "race": "Cíclope",
+        "skills": [
+            "Esquivar",
+            "Sigilo",
+            "Ataque mágico",
+            "Guardia",
+            "Combate cuerpo a cuerpo",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Jaina_57",
+        "class": "Monje",
+        "race": "Elfo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Curación",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Jaina_58",
+        "class": "Druida",
+        "race": "Humano",
+        "skills": [
+            "Esquivar",
+            "Guardia",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Jaina_59",
         "class": "Paladín",
+        "race": "Gnomo",
+        "skills": [
+            "Guardia",
+            "Invocación",
+            "Ataque mágico",
+            "Esquivar",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Arthas_60",
+        "class": "Nigromante",
+        "race": "Orco",
+        "skills": [
+            "Curación",
+            "Guardia",
+            "Combate cuerpo a cuerpo",
+            "Invocación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Tyrande_61",
+        "class": "Arquero",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Arquería",
+            "Ataque físico",
+            "Curación",
+            "Combate cuerpo a cuerpo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Malfurion_62",
+        "class": "Mago",
+        "race": "Humano",
+        "skills": [
+            "Ataque mágico",
+            "Esquivar",
+            "Combate cuerpo a cuerpo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Jaina_63",
+        "class": "Bárbaro",
+        "race": "Cíclope",
+        "skills": [
+            "Invocación",
+            "Arquería",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_64",
+        "class": "Monje",
+        "race": "Enano",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Arquería",
+            "Guardia",
+            "Esquivar",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Sylvanas_65",
+        "class": "Asesino",
+        "race": "Humano",
+        "skills": [
+            "Invocación",
+            "Guardia",
+            "Ataque físico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_66",
+        "class": "Mago",
+        "race": "Duende",
+        "skills": [
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Thrall_67",
+        "class": "Asesino",
+        "race": "Sirena",
+        "skills": [
+            "Ataque físico",
+            "Invocación",
+            "Esquivar",
+            "Arquería",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_68",
+        "class": "Clérigo",
+        "race": "Cíclope",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Guardia",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Sylvanas_69",
+        "class": "Guerrero",
+        "race": "Elfo",
+        "skills": [
+            "Guardia",
+            "Invocación",
+            "Sigilo",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Sylvanas_70",
+        "class": "Guerrero",
+        "race": "Cíclope",
+        "skills": [
+            "Esquivar",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_71",
+        "class": "Arquero",
+        "race": "Cíclope",
+        "skills": [
+            "Sigilo",
+            "Arquería",
+            "Guardia",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Sylvanas_72",
+        "class": "Arquero",
+        "race": "Duende",
+        "skills": [
+            "Esquivar",
+            "Guardia",
+            "Ataque mágico",
+            "Sigilo",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Illidan_73",
+        "class": "Arquero",
+        "race": "Cíclope",
+        "skills": [
+            "Ataque mágico",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Sylvanas_74",
+        "class": "Nigromante",
+        "race": "Humano",
+        "skills": [
+            "Curación",
+            "Sigilo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Thrall_75",
+        "class": "Asesino",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Invocación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Tyrande_76",
+        "class": "Druida",
+        "race": "Gnomo",
+        "skills": [
+            "Curación",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Malfurion_77",
+        "class": "Arquero",
+        "race": "Cíclope",
+        "skills": [
+            "Invocación",
+            "Guardia",
+            "Ataque mágico",
+            "Sigilo",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Tyrande_78",
+        "class": "Bárbaro",
+        "race": "Humano",
+        "skills": [
+            "Ataque mágico",
+            "Sigilo",
+            "Curación",
+            "Ataque físico",
+            "Arquería",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Valeera_79",
+        "class": "Guerrero",
+        "race": "Orco",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Sigilo",
+            "Arquería",
+            "Curación",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Arthas_80",
+        "class": "Guerrero",
+        "race": "Gnomo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Kael_81",
+        "class": "Bárbaro",
+        "race": "Sirena",
+        "skills": [
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Anduin_82",
+        "class": "Guerrero",
+        "race": "Cíclope",
+        "skills": [
+            "Sigilo",
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Curación",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Sylvanas_83",
+        "class": "Asesino",
+        "race": "Duende",
+        "skills": [
+            "Ataque físico",
+            "Sigilo",
+            "Guardia",
+            "Curación",
+            "Esquivar",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Illidan_84",
+        "class": "Druida",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Arquería",
+            "Guardia",
+            "Sigilo",
+            "Combate cuerpo a cuerpo",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Thrall_85",
+        "class": "Mago",
+        "race": "Duende",
+        "skills": [
+            "Guardia",
+            "Combate cuerpo a cuerpo",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_86",
+        "class": "Monje",
+        "race": "Gnomo",
+        "skills": [
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Illidan_87",
+        "class": "Clérigo",
+        "race": "Humano",
+        "skills": [
+            "Arquería",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Valeera_88",
+        "class": "Clérigo",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Tyrande_89",
+        "class": "Clérigo",
+        "race": "Sirena",
+        "skills": [
+            "Curación",
+            "Esquivar",
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico",
+            "Invocación",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Malfurion_90",
+        "class": "Bárbaro",
+        "race": "Cíclope",
+        "skills": [
+            "Curación",
+            "Invocación",
+            "Arquería",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Tyrande_91",
+        "class": "Paladín",
+        "race": "Cíclope",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Curación",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Tyrande_92",
+        "class": "Nigromante",
+        "race": "Gnomo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Guardia",
+            "Invocación",
+            "Curación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Anduin_93",
+        "class": "Guerrero",
+        "race": "Sirena",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Valeera_94",
+        "class": "Monje",
+        "race": "Centauro",
+        "skills": [
+            "Ataque físico",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Kael_95",
+        "class": "Monje",
+        "race": "Sirena",
+        "skills": [
+            "Sigilo",
+            "Invocación",
+            "Curación",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Jaina_96",
+        "class": "Monje",
+        "race": "Gnomo",
+        "skills": [
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Anduin_97",
+        "class": "Monje",
+        "race": "Cíclope",
+        "skills": [
+            "Arquería",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Thrall_98",
+        "class": "Paladín",
+        "race": "Duende",
+        "skills": [
+            "Invocación",
+            "Combate cuerpo a cuerpo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Malfurion_99",
+        "class": "Asesino",
+        "race": "Sirena",
+        "skills": [
+            "Sigilo",
+            "Curación",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Valeera_100",
+        "class": "Clérigo",
+        "race": "Cíclope",
+        "skills": [
+            "Ataque físico",
+            "Invocación",
+            "Arquería",
+            "Ataque mágico",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Thrall_101",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Invocación",
+            "Esquivar",
+            "Ataque físico",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Valeera_102",
+        "class": "Paladín",
+        "race": "Cíclope",
+        "skills": [
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Kael_103",
+        "class": "Bárbaro",
+        "race": "Orco",
+        "skills": [
+            "Arquería",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Arthas_104",
+        "class": "Mago",
+        "race": "Humano",
+        "skills": [
+            "Curación",
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Malfurion_105",
+        "class": "Clérigo",
+        "race": "Gnomo",
+        "skills": [
+            "Esquivar",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Malfurion_106",
+        "class": "Monje",
+        "race": "Cíclope",
+        "skills": [
+            "Invocación",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Sylvanas_107",
+        "class": "Mago",
+        "race": "Duende",
+        "skills": [
+            "Ataque físico",
+            "Arquería",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Kael_108",
+        "class": "Clérigo",
+        "race": "Cíclope",
+        "skills": [
+            "Ataque mágico",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Sylvanas_109",
+        "class": "Mago",
+        "race": "Gnomo",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Jaina_110",
+        "class": "Asesino",
+        "race": "Enano",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Tyrande_111",
+        "class": "Asesino",
+        "race": "Humano",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Ataque físico",
+            "Ataque mágico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_112",
+        "class": "Arquero",
+        "race": "Centauro",
+        "skills": [
+            "Invocación",
+            "Esquivar",
+            "Sigilo",
+            "Guardia",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Anduin_113",
+        "class": "Druida",
+        "race": "Centauro",
+        "skills": [
+            "Ataque físico",
+            "Guardia",
+            "Ataque mágico",
+            "Curación",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Malfurion_114",
+        "class": "Guerrero",
+        "race": "Humano",
+        "skills": [
+            "Ataque físico",
+            "Invocación",
+            "Arquería",
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Thrall_115",
+        "class": "Bárbaro",
+        "race": "Duende",
+        "skills": [
+            "Ataque físico",
+            "Sigilo",
+            "Arquería",
+            "Combate cuerpo a cuerpo",
+            "Esquivar",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Jaina_116",
+        "class": "Guerrero",
+        "race": "Sirena",
+        "skills": [
+            "Curación",
+            "Ataque mágico",
+            "Guardia",
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Kael_117",
+        "class": "Paladín",
+        "race": "Centauro",
+        "skills": [
+            "Ataque mágico",
+            "Sigilo",
+            "Esquivar",
+            "Arquería",
+            "Guardia",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Thrall_118",
+        "class": "Arquero",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque físico",
+            "Guardia",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Valeera_119",
+        "class": "Bárbaro",
         "race": "Orco",
         "skills": [
             "Esquivar",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Sylvanas_120",
+        "class": "Clérigo",
+        "race": "Cíclope",
+        "skills": [
+            "Curación",
+            "Esquivar",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Malfurion_121",
+        "class": "Guerrero",
+        "race": "Orco",
+        "skills": [
+            "Sigilo",
+            "Curación",
+            "Invocación",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Valeera_122",
+        "class": "Paladín",
+        "race": "Enano",
+        "skills": [
+            "Curación",
+            "Sigilo",
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Illidan_123",
+        "class": "Paladín",
+        "race": "Enano",
+        "skills": [
+            "Arquería",
+            "Esquivar",
+            "Ataque mágico",
+            "Sigilo",
+            "Guardia",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Illidan_124",
+        "class": "Monje",
+        "race": "Duende",
+        "skills": [
+            "Curación"
+        ]
+    },
+    {
+        "name": "Anduin_125",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Curación",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Anduin_126",
+        "class": "Arquero",
+        "race": "Centauro",
+        "skills": [
+            "Guardia",
+            "Ataque físico",
+            "Ataque mágico",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Anduin_127",
+        "class": "Mago",
+        "race": "Centauro",
+        "skills": [
+            "Ataque mágico",
+            "Arquería",
+            "Ataque físico",
+            "Invocación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Jaina_128",
+        "class": "Asesino",
+        "race": "Enano",
+        "skills": [
+            "Ataque mágico",
+            "Ataque físico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Sylvanas_129",
+        "class": "Bárbaro",
+        "race": "Sirena",
+        "skills": [
+            "Esquivar",
+            "Ataque físico",
+            "Curación",
+            "Guardia",
+            "Ataque mágico",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Jaina_130",
+        "class": "Druida",
+        "race": "Duende",
+        "skills": [
+            "Guardia",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Arthas_131",
+        "class": "Arquero",
+        "race": "Elfo",
+        "skills": [
+            "Invocación",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Thrall_132",
+        "class": "Bárbaro",
+        "race": "Duende",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Curación",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Jaina_133",
+        "class": "Nigromante",
+        "race": "Elfo",
+        "skills": [
+            "Curación"
+        ]
+    },
+    {
+        "name": "Tyrande_134",
+        "class": "Mago",
+        "race": "Elfo",
+        "skills": [
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Arthas_135",
+        "class": "Druida",
+        "race": "Elfo",
+        "skills": [
+            "Arquería",
             "Ataque mágico",
             "Combate cuerpo a cuerpo",
+            "Esquivar",
+            "Ataque físico",
             "Sigilo"
+        ]
+    },
+    {
+        "name": "Kael_136",
+        "class": "Druida",
+        "race": "Humano",
+        "skills": [
+            "Ataque mágico",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_137",
+        "class": "Guerrero",
+        "race": "Gnomo",
+        "skills": [
+            "Guardia",
+            "Curación",
+            "Sigilo",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Arthas_138",
+        "class": "Druida",
+        "race": "Cíclope",
+        "skills": [
+            "Ataque físico",
+            "Combate cuerpo a cuerpo",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Tyrande_139",
+        "class": "Guerrero",
+        "race": "Duende",
+        "skills": [
+            "Ataque mágico",
+            "Arquería",
+            "Invocación",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Sylvanas_140",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Invocación",
+            "Esquivar",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Kael_141",
+        "class": "Druida",
+        "race": "Cíclope",
+        "skills": [
+            "Invocación",
+            "Arquería",
+            "Esquivar",
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Anduin_142",
+        "class": "Monje",
+        "race": "Centauro",
+        "skills": [
+            "Guardia",
+            "Combate cuerpo a cuerpo",
+            "Invocación",
+            "Esquivar",
+            "Sigilo",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Arthas_143",
+        "class": "Bárbaro",
+        "race": "Orco",
+        "skills": [
+            "Sigilo",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Anduin_144",
+        "class": "Nigromante",
+        "race": "Orco",
+        "skills": [
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Tyrande_145",
+        "class": "Paladín",
+        "race": "Humano",
+        "skills": [
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_146",
+        "class": "Arquero",
+        "race": "Gnomo",
+        "skills": [
+            "Curación",
+            "Ataque físico",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Illidan_147",
+        "class": "Asesino",
+        "race": "Centauro",
+        "skills": [
+            "Ataque mágico",
+            "Sigilo",
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Arthas_148",
+        "class": "Guerrero",
+        "race": "Enano",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Arthas_149",
+        "class": "Asesino",
+        "race": "Duende",
+        "skills": [
+            "Ataque físico",
+            "Sigilo",
+            "Ataque mágico",
+            "Curación",
+            "Esquivar",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Malfurion_150",
+        "class": "Monje",
+        "race": "Enano",
+        "skills": [
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Tyrande_151",
+        "class": "Guerrero",
+        "race": "Humano",
+        "skills": [
+            "Esquivar",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Sylvanas_152",
+        "class": "Arquero",
+        "race": "Humano",
+        "skills": [
+            "Esquivar",
+            "Sigilo",
+            "Invocación",
+            "Arquería",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Valeera_153",
+        "class": "Clérigo",
+        "race": "Humano",
+        "skills": [
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Illidan_154",
+        "class": "Clérigo",
+        "race": "Gnomo",
+        "skills": [
+            "Invocación",
+            "Esquivar",
+            "Sigilo",
+            "Ataque físico",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Malfurion_155",
+        "class": "Bárbaro",
+        "race": "Sirena",
+        "skills": [
+            "Ataque mágico",
+            "Curación",
+            "Arquería",
+            "Combate cuerpo a cuerpo",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_156",
+        "class": "Clérigo",
+        "race": "Sirena",
+        "skills": [
+            "Arquería",
+            "Ataque físico",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Kael_157",
+        "class": "Nigromante",
+        "race": "Enano",
+        "skills": [
+            "Invocación",
+            "Combate cuerpo a cuerpo",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Jaina_158",
+        "class": "Nigromante",
+        "race": "Sirena",
+        "skills": [
+            "Ataque mágico",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Sylvanas_159",
+        "class": "Bárbaro",
+        "race": "Duende",
+        "skills": [
+            "Invocación",
+            "Esquivar",
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Curación",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Illidan_160",
+        "class": "Paladín",
+        "race": "Elfo",
+        "skills": [
+            "Ataque físico",
+            "Invocación",
+            "Ataque mágico",
+            "Arquería",
+            "Guardia",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Valeera_161",
+        "class": "Clérigo",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Jaina_162",
+        "class": "Asesino",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque mágico",
+            "Esquivar",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Tyrande_163",
+        "class": "Paladín",
+        "race": "Cíclope",
+        "skills": [
+            "Guardia",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Valeera_164",
+        "class": "Monje",
+        "race": "Elfo",
+        "skills": [
+            "Ataque mágico",
+            "Curación",
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Arthas_165",
+        "class": "Asesino",
+        "race": "Cíclope",
+        "skills": [
+            "Ataque mágico",
+            "Invocación",
+            "Arquería",
+            "Ataque físico",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Thrall_166",
+        "class": "Nigromante",
+        "race": "Duende",
+        "skills": [
+            "Sigilo",
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Guardia",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Kael_167",
+        "class": "Bárbaro",
+        "race": "Duende",
+        "skills": [
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Thrall_168",
+        "class": "Clérigo",
+        "race": "Orco",
+        "skills": [
+            "Invocación",
+            "Ataque físico",
+            "Combate cuerpo a cuerpo",
+            "Sigilo",
+            "Ataque mágico",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Anduin_169",
+        "class": "Monje",
+        "race": "Sirena",
+        "skills": [
+            "Invocación",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Kael_170",
+        "class": "Mago",
+        "race": "Elfo",
+        "skills": [
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Thrall_171",
+        "class": "Asesino",
+        "race": "Humano",
+        "skills": [
+            "Arquería",
+            "Invocación",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Jaina_172",
+        "class": "Druida",
+        "race": "Gnomo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico",
+            "Curación",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Arthas_173",
+        "class": "Mago",
+        "race": "Duende",
+        "skills": [
+            "Ataque físico",
+            "Invocación",
+            "Arquería",
+            "Guardia",
+            "Curación",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Malfurion_174",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Kael_175",
+        "class": "Paladín",
+        "race": "Orco",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Esquivar",
+            "Ataque mágico",
+            "Invocación",
+            "Ataque físico",
+            "Arquería"
+        ]
+    },
+    {
+        "name": "Jaina_176",
+        "class": "Monje",
+        "race": "Orco",
+        "skills": [
+            "Arquería",
+            "Guardia",
+            "Esquivar",
+            "Ataque físico",
+            "Ataque mágico",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Illidan_177",
+        "class": "Nigromante",
+        "race": "Gnomo",
+        "skills": [
+            "Curación",
+            "Esquivar",
+            "Invocación",
+            "Arquería",
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico"
+        ]
+    },
+    {
+        "name": "Arthas_178",
+        "class": "Nigromante",
+        "race": "Cíclope",
+        "skills": [
+            "Esquivar",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Illidan_179",
+        "class": "Bárbaro",
+        "race": "Cíclope",
+        "skills": [
+            "Guardia",
+            "Esquivar",
+            "Arquería",
+            "Invocación",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Illidan_180",
+        "class": "Arquero",
+        "race": "Humano",
+        "skills": [
+            "Guardia",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Malfurion_181",
+        "class": "Nigromante",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Invocación",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Valeera_182",
+        "class": "Clérigo",
+        "race": "Humano",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Ataque físico",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Anduin_183",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Esquivar",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Illidan_184",
+        "class": "Nigromante",
+        "race": "Orco",
+        "skills": [
+            "Esquivar",
+            "Sigilo",
+            "Ataque físico",
+            "Ataque mágico",
+            "Guardia",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Tyrande_185",
+        "class": "Clérigo",
+        "race": "Sirena",
+        "skills": [
+            "Guardia",
+            "Sigilo",
+            "Esquivar",
+            "Ataque físico",
+            "Combate cuerpo a cuerpo",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Kael_186",
+        "class": "Guerrero",
+        "race": "Enano",
+        "skills": [
+            "Ataque mágico",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Illidan_187",
+        "class": "Mago",
+        "race": "Enano",
+        "skills": [
+            "Sigilo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Jaina_188",
+        "class": "Bárbaro",
+        "race": "Centauro",
+        "skills": [
+            "Ataque mágico",
+            "Esquivar",
+            "Combate cuerpo a cuerpo",
+            "Arquería",
+            "Ataque físico",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Thrall_189",
+        "class": "Druida",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque mágico",
+            "Guardia",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Thrall_190",
+        "class": "Guerrero",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque físico",
+            "Combate cuerpo a cuerpo",
+            "Guardia",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Valeera_191",
+        "class": "Monje",
+        "race": "Orco",
+        "skills": [
+            "Ataque mágico",
+            "Ataque físico",
+            "Arquería",
+            "Combate cuerpo a cuerpo",
+            "Invocación",
+            "Esquivar"
+        ]
+    },
+    {
+        "name": "Valeera_192",
+        "class": "Mago",
+        "race": "Gnomo",
+        "skills": [
+            "Ataque físico",
+            "Guardia",
+            "Sigilo"
+        ]
+    },
+    {
+        "name": "Thrall_193",
+        "class": "Guerrero",
+        "race": "Humano",
+        "skills": [
+            "Sigilo",
+            "Combate cuerpo a cuerpo",
+            "Guardia",
+            "Arquería",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Malfurion_194",
+        "class": "Clérigo",
+        "race": "Centauro",
+        "skills": [
+            "Ataque mágico",
+            "Arquería",
+            "Sigilo",
+            "Curación",
+            "Combate cuerpo a cuerpo",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Thrall_195",
+        "class": "Guerrero",
+        "race": "Orco",
+        "skills": [
+            "Curación"
+        ]
+    },
+    {
+        "name": "Tyrande_196",
+        "class": "Monje",
+        "race": "Elfo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Ataque mágico",
+            "Arquería",
+            "Esquivar",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Valeera_197",
+        "class": "Druida",
+        "race": "Gnomo",
+        "skills": [
+            "Combate cuerpo a cuerpo",
+            "Invocación"
+        ]
+    },
+    {
+        "name": "Valeera_198",
+        "class": "Monje",
+        "race": "Enano",
+        "skills": [
+            "Esquivar",
+            "Guardia",
+            "Ataque mágico",
+            "Ataque físico"
+        ]
+    },
+    {
+        "name": "Sylvanas_199",
+        "class": "Nigromante",
+        "race": "Sirena",
+        "skills": [
+            "Sigilo",
+            "Esquivar",
+            "Combate cuerpo a cuerpo",
+            "Curación"
+        ]
+    },
+    {
+        "name": "Valeera_200",
+        "class": "Clérigo",
+        "race": "Gnomo",
+        "skills": [
+            "Esquivar",
+            "Guardia"
         ]
     }
 ]
