@@ -18,48 +18,50 @@ with tab1:
         st.session_state.selected_skills = []
 
     with st.form("character_form", clear_on_submit=True, border=False):
-        name = st.text_input("Nombre del personaje", placeholder="Ingresa un nombre", max_chars=16)
-        class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
-        race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
-        
-        st.caption("Selecciona al menos 1 habilidad (máx 6).")
-        
-        cols = st.columns(3)
-        for i, (skill, info) in enumerate(skills_info.items()):
-            col = cols[i % 3]
-            with col:
-                selected = st.toggle(
-                    f"{skill}",
-                    value=skill in st.session_state.selected_skills,
-                    help=f"""{info["description"]} \n
-    Tipo: {info["type"]} | Objetivo: {info["target"]}
-    Valor: {info["value"]} | Rareza: {info["rarity"]} | Fuente: {info["source"]}
-    """
-                )
-                if selected and skill not in st.session_state.selected_skills:
-                    st.session_state.selected_skills.append(skill)
-                elif not selected and skill in st.session_state.selected_skills:
-                    st.session_state.selected_skills.remove(skill)
+        with st.container(horizontal_alignment="center"):
+            name = st.text_input("Nombre del personaje", placeholder="Ingresa un nombre", max_chars=16)
+            name_error_msg = st.empty()
+            class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
+            race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
+            
+            st.caption("Selecciona al menos 1 habilidad (máx 6)")
+            
+            cols = st.columns(3)
+            for i, (skill, info) in enumerate(skills_info.items()):
+                col = cols[i % 3]
+                with col:
+                    selected = st.toggle(
+                        f"{skill}",
+                        value=skill in st.session_state.selected_skills,
+                        help=f"""{info["description"]} \n
+        Tipo: {info["type"]} | Objetivo: {info["target"]}
+        Valor: {info["value"]} | Rareza: {info["rarity"]} | Fuente: {info["source"]}
+        """
+                    )
+                    if selected and skill not in st.session_state.selected_skills:
+                        st.session_state.selected_skills.append(skill)
+                    elif not selected and skill in st.session_state.selected_skills:
+                        st.session_state.selected_skills.remove(skill)
+            skills_error_msg = st.empty()
 
+            submitted = st.form_submit_button("Crear personaje", type="primary")
+            if submitted:
+                is_name_valid, invalid_msg = validate_name(name)
+                if not is_name_valid:
+                    name_error_msg.error(invalid_msg, icon=":material/release_alert:")
+                elif len(st.session_state.selected_skills) != 6:
+                    skills_error_msg.error("Debes seleccionar exactamente 6 habilidades.", icon=":material/release_alert:")
+                else:
+                    character = create_character(name, class_rpg, race, st.session_state.selected_skills)
+                    save_character(character)
+                    st.success("¡Personaje creado exitosamente!", icon=":material/done_outline:")
+                    st.json(character)
+                st.session_state.selected_skills = []
 
-        submitted = st.form_submit_button("Crear personaje", type="primary")
-        if submitted:
-            is_name_valid, invalid_msg = validate_name(name)
-            if not is_name_valid:
-                st.error(invalid_msg, icon=":material/release_alert:")
-            elif len(st.session_state.selected_skills) != 6:
-                st.error("Debes seleccionar exactamente 6 habilidades.", icon=":material/release_alert:")
-            else:
-                character = create_character(name, class_rpg, race, st.session_state.selected_skills)
-                save_character(character)
-                st.success("¡Personaje creado exitosamente!", icon=":material/done_outline:")
-                st.json(character)
-            st.session_state.selected_skills = []
-
-    # Mostrar personajes guardados
-    st.subheader("📂 Personajes registrados en archivo")
-    characters = load_characters()
-    st.write(f"Actualmente hay **{len(characters)}** personajes guardados.")
+        # Mostrar personajes guardados
+        st.subheader("📂 Personajes registrados en archivo")
+        characters = load_characters()
+        st.write(f"Actualmente hay **{len(characters)}** personajes guardados.")
 
 # ---------------- TAB 2: BUSCAR PERSONAJE ----------------
 with tab2:
