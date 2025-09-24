@@ -17,7 +17,7 @@ with tab1:
     if "selected_skills" not in st.session_state:
         st.session_state.selected_skills = []
 
-    with st.form("character_form", clear_on_submit=True):
+    with st.form("character_form", clear_on_submit=True, border=False):
         name = st.text_input("Nombre del personaje", placeholder="Ingresa un nombre", max_chars=16)
         class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
         race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
