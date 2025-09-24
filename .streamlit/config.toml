@@ -1,5 +1,29 @@
+[server]
+enableStaticServing = true
+
+[[theme.fontFaces]]
+family="exo2"
+url="app/static/Exo2-VariableFont_wght.ttf"
+style="normal"
+
+[[theme.fontFaces]]
+family="exo2-italic"
+url="app/static/Exo2-Italic-VariableFont_wght.ttf"
+style="italic"
+
+[[theme.fontFaces]]
+family="Gabriela"
+url="app/static/Gabriela-Regular.ttf"
+
+[[theme.fontFaces]]
+family="NewRocker"
+url="app/static/NewRocker-Regular.ttf"
+
+
 [theme]
 base="dark"
-primaryColor="#af791c"
+primaryColor="darkGoldenrod"
 backgroundColor="#1c1c1c"
 secondaryBackgroundColor="#363b30"
+font = "Gabriela"
+headingFont = "NewRocker"
