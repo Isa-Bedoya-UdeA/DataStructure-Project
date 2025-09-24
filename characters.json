@@ -2162,5 +2162,18 @@
             "Guardia",
             "Arquería"
         ]
+    },
+    {
+        "name": "Aldi",
+        "class": "Guerrero",
+        "race": "Humano",
+        "skills": [
+            "Ataque físico",
+            "Ataque mágico",
+            "Curación",
+            "Invocación",
+            "Esquivar",
+            "Combate cuerpo a cuerpo"
+        ]
     }
 ]

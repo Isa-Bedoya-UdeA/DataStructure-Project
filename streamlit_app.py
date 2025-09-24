@@ -21,9 +21,9 @@ with tab1:
         name = st.text_input("Nombre del personaje", placeholder="Ingresa un nombre", max_chars=16)
         class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
         race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
-
+        
         st.caption("Selecciona al menos 1 habilidad (máx 6).")
-
+        
         cols = st.columns(3)
         for i, (skill, info) in enumerate(skills_info.items()):
             col = cols[i % 3]
@@ -37,24 +37,24 @@ with tab1:
     """
                 )
                 if selected and skill not in st.session_state.selected_skills:
-                    if len(st.session_state.selected_skills) < 6:
-                        st.session_state.selected_skills.append(skill)
+                    st.session_state.selected_skills.append(skill)
                 elif not selected and skill in st.session_state.selected_skills:
                     st.session_state.selected_skills.remove(skill)
+
 
         submitted = st.form_submit_button("Crear personaje", type="primary")
         if submitted:
             is_name_valid, invalid_msg = validate_name(name)
             if not is_name_valid:
                 st.error(invalid_msg, icon=":material/release_alert:")
-            elif len(st.session_state.selected_skills) == 0:
-                st.error("Debes seleccionar al menos una habilidad.", icon=":material/release_alert:")
+            elif len(st.session_state.selected_skills) != 6:
+                st.error("Debes seleccionar exactamente 6 habilidades.", icon=":material/release_alert:")
             else:
                 character = create_character(name, class_rpg, race, st.session_state.selected_skills)
                 save_character(character)
                 st.success("¡Personaje creado exitosamente!", icon=":material/done_outline:")
                 st.json(character)
-                st.session_state.selected_skills = []
+            st.session_state.selected_skills = []
 
     # Mostrar personajes guardados
     st.subheader("📂 Personajes registrados en archivo")
