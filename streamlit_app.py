@@ -24,7 +24,7 @@ with tab1:
             class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
             race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
             
-            st.caption("Selecciona al menos 1 habilidad (máx 6)")
+            st.caption("**Selecciona 6 habilidades**")
             
             cols = st.columns(3)
             for i, (skill, info) in enumerate(skills_info.items()):
@@ -43,8 +43,8 @@ with tab1:
                     elif not selected and skill in st.session_state.selected_skills:
                         st.session_state.selected_skills.remove(skill)
             skills_error_msg = st.empty()
-
-            submitted = st.form_submit_button("Crear personaje", type="primary")
+            with st.container(width=250):
+                submitted = st.form_submit_button("Crear personaje", type="primary", width="stretch")
             if submitted:
                 is_name_valid, invalid_msg = validate_name(name)
                 if not is_name_valid:
