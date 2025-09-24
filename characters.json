@@ -2134,5 +2134,33 @@
             "Ataque mágico",
             "Curación"
         ]
+    },
+    {
+        "name": "Tyrande_1",
+        "class": "Bárbaro",
+        "race": "Enano",
+        "skills": [
+            "Ataque mágico",
+            "Curación",
+            "Guardia"
+        ]
+    },
+    {
+        "name": "Aregal",
+        "class": "Guerrero",
+        "race": "Centauro",
+        "skills": [
+            "Invocación",
+            "Combate cuerpo a cuerpo"
+        ]
+    },
+    {
+        "name": "Albinaque",
+        "class": "Druida",
+        "race": "Cíclope",
+        "skills": [
+            "Guardia",
+            "Arquería"
+        ]
     }
 ]

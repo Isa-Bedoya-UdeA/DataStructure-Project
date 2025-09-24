@@ -1,12 +1,12 @@
 import streamlit as st
 import json
-from utils import load_characters, save_character, create_character
+from utils import load_characters, save_character, create_character, validate_name
 
 # ---------------- CARGAR SKILLS ----------------
 with open("skills.json", "r", encoding="utf-8") as f:
     skills_info = json.load(f)
 
-st.set_page_config(page_title="Gestor RPG", layout="centered")
+st.set_page_config(page_title="Gestor RPG", layout="centered", page_icon=":performing_arts:")
 st.header("Gestor de Personajes RPG")
 
 # Tabs
@@ -44,14 +44,15 @@ with tab1:
 
         submitted = st.form_submit_button("Crear personaje", type="primary")
         if submitted:
-            if not name.strip():
-                st.error("⚠ El personaje debe tener un nombre.")
+            is_name_valid, invalid_msg = validate_name(name)
+            if not is_name_valid:
+                st.error(invalid_msg, icon=":material/release_alert:")
             elif len(st.session_state.selected_skills) == 0:
-                st.error("⚠ Debes seleccionar al menos una habilidad.")
+                st.error("Debes seleccionar al menos una habilidad.", icon=":material/release_alert:")
             else:
                 character = create_character(name, class_rpg, race, st.session_state.selected_skills)
                 save_character(character)
-                st.success("¡Personaje creado exitosamente!")
+                st.success("¡Personaje creado exitosamente!", icon=":material/done_outline:")
                 st.json(character)
                 st.session_state.selected_skills = []
 
@@ -72,7 +73,7 @@ with tab2:
     else:
         results = characters
     if results:
-        st.success(f"Se encontraron {len(results)} personajes:")
+        st.success(f"Se encontraron {len(results)} personajes:", icon=":material/done_outline:")
 
         for c in results:
             with st.expander(f"📜 {c['name']} ({c['class']} - {c['race']})", expanded=False):
@@ -82,4 +83,4 @@ with tab2:
                 for skill in c["skills"]:
                     st.markdown(f"- {skill}")
     else:
-        st.warning("⚠ No hay personajes registrados.")
+        st.warning("No hay personajes registrados.", icon=":material/data_alert:")

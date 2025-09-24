@@ -26,3 +26,11 @@ def create_character(name, class_rpg, race, skills):
         "race": race,
         "skills": skills
     }
+
+def validate_name(name):
+    if not name.strip():
+        return False, "El personaje debe tener un nombre."
+    characters = load_characters()
+    if any(char["name"] == name for char in characters):
+        return False, "Ya existe un personaje con ese nombre."
+    return True, ""
