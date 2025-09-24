@@ -27,3 +27,6 @@ backgroundColor="#1c1c1c"
 secondaryBackgroundColor="#363b30"
 font = "Gabriela"
 headingFont = "NewRocker"
+showWidgetBorder = true
+baseRadius = "small"
+buttonRadius = "full"
