@@ -17,41 +17,43 @@ with tab1:
     if "selected_skills" not in st.session_state:
         st.session_state.selected_skills = []
 
-    name = st.text_input("Nombre del personaje", placeholder="Ingresa un nombre", max_chars=16)
-    class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
-    race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
+    with st.form("character_form", clear_on_submit=True):
+        name = st.text_input("Nombre del personaje", placeholder="Ingresa un nombre", max_chars=16)
+        class_rpg = st.selectbox("Clase", ["Guerrero", "Mago", "Clérigo", "Paladín", "Bárbaro", "Asesino", "Druida", "Arquero", "Nigromante", "Monje"])
+        race = st.selectbox("Raza", ["Humano", "Elfo", "Enano", "Orco", "Gnomo", "Centauro", "Cíclope", "Duende", "Sirena"])
 
-    st.caption("Selecciona al menos 1 habilidad (máx 6).")
+        st.caption("Selecciona al menos 1 habilidad (máx 6).")
 
-    cols = st.columns(3)
-    for i, (skill, info) in enumerate(skills_info.items()):
-        col = cols[i % 3]
-        with col:
-            selected = st.toggle(
-                f"{skill}",
-                value=skill in st.session_state.selected_skills,
-                help=f"""{info["description"]} \n
-Tipo: {info["type"]} | Objetivo: {info["target"]}
-Valor: {info["value"]} | Rareza: {info["rarity"]} | Fuente: {info["source"]}
-"""
-            )
-            if selected and skill not in st.session_state.selected_skills:
-                if len(st.session_state.selected_skills) < 6:
-                    st.session_state.selected_skills.append(skill)
-            elif not selected and skill in st.session_state.selected_skills:
-                st.session_state.selected_skills.remove(skill)
+        cols = st.columns(3)
+        for i, (skill, info) in enumerate(skills_info.items()):
+            col = cols[i % 3]
+            with col:
+                selected = st.toggle(
+                    f"{skill}",
+                    value=skill in st.session_state.selected_skills,
+                    help=f"""{info["description"]} \n
+    Tipo: {info["type"]} | Objetivo: {info["target"]}
+    Valor: {info["value"]} | Rareza: {info["rarity"]} | Fuente: {info["source"]}
+    """
+                )
+                if selected and skill not in st.session_state.selected_skills:
+                    if len(st.session_state.selected_skills) < 6:
+                        st.session_state.selected_skills.append(skill)
+                elif not selected and skill in st.session_state.selected_skills:
+                    st.session_state.selected_skills.remove(skill)
 
-    if st.button("Crear personaje", type="primary"):
-        if not name.strip():
-            st.error("⚠ El personaje debe tener un nombre.")
-        elif len(st.session_state.selected_skills) == 0:
-            st.error("⚠ Debes seleccionar al menos una habilidad.")
-        else:
-            character = create_character(name, class_rpg, race, st.session_state.selected_skills)
-            save_character(character)
-            st.success("¡Personaje creado exitosamente!")
-            st.json(character)
-            st.session_state.selected_skills = []
+        submitted = st.form_submit_button("Crear personaje", type="primary")
+        if submitted:
+            if not name.strip():
+                st.error("⚠ El personaje debe tener un nombre.")
+            elif len(st.session_state.selected_skills) == 0:
+                st.error("⚠ Debes seleccionar al menos una habilidad.")
+            else:
+                character = create_character(name, class_rpg, race, st.session_state.selected_skills)
+                save_character(character)
+                st.success("¡Personaje creado exitosamente!")
+                st.json(character)
+                st.session_state.selected_skills = []
 
     # Mostrar personajes guardados
     st.subheader("📂 Personajes registrados en archivo")

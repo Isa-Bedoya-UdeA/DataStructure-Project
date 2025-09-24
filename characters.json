@@ -2125,5 +2125,14 @@
             "Esquivar",
             "Guardia"
         ]
+    },
+    {
+        "name": "sdads",
+        "class": "Paladín",
+        "race": "Cíclope",
+        "skills": [
+            "Ataque mágico",
+            "Curación"
+        ]
     }
 ]
