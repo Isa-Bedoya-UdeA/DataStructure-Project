@@ -1,6 +1,9 @@
 import streamlit as st
 import json
-from utils import load_characters, save_character, create_character, validate_name
+from utils import load_characters, save_character, create_character, validate_name, load_skills
+
+skills_info = load_skills()
+skill_ids = list(skills_info.keys())
 
 # ---------------- CARGAR SKILLS ----------------
 with open("skills.json", "r", encoding="utf-8") as f:
@@ -27,21 +30,22 @@ with tab1:
             st.caption("**Selecciona 6 habilidades**")
             
             cols = st.columns(3)
-            for i, (skill, info) in enumerate(skills_info.items()):
+            for i, skill_id in enumerate(skill_ids):
+                info = skills_info[skill_id]
                 col = cols[i % 3]
                 with col:
                     selected = st.toggle(
-                        f"{skill}",
-                        value=skill in st.session_state.selected_skills,
-                        help=f"""{info["description"]} \n
-        Tipo: {info["type"]} | Objetivo: {info["target"]}
-        Valor: {info["value"]} | Rareza: {info["rarity"]} | Fuente: {info["source"]}
-        """
+                        f"{info['name']}",
+                        value=skill_id in st.session_state.selected_skills,
+                        help=f"""{info["description"]}\n
+            Tipo: {info["type"]} | Objetivo: {info["target"]}
+            Valor: {info["value"]} | Rareza: {info["rarity"]} | Fuente: {info["source"]}
+            """
                     )
-                    if selected and skill not in st.session_state.selected_skills:
-                        st.session_state.selected_skills.append(skill)
-                    elif not selected and skill in st.session_state.selected_skills:
-                        st.session_state.selected_skills.remove(skill)
+                    if selected and skill_id not in st.session_state.selected_skills:
+                        st.session_state.selected_skills.append(skill_id)
+                    elif not selected and skill_id in st.session_state.selected_skills:
+                        st.session_state.selected_skills.remove(skill_id)
             skills_error_msg = st.empty()
             with st.container(width=250):
                 submitted = st.form_submit_button("Crear personaje", type="primary", width="stretch")
@@ -81,8 +85,11 @@ with tab2:
             with st.expander(f"📜 {c['name']} ({c['class']} - {c['race']})", expanded=False):
                 st.write(f"**Clase:** {c['class']}")
                 st.write(f"**Raza:** {c['race']}")
+                st.write(f"**HP:** {c['hp']} | **Energy:** {c['energy']} | **Level:** {c['level']}")
                 st.write("**Habilidades:**")
-                for skill in c["skills"]:
-                    st.markdown(f"- {skill}")
+                for skill_id in c["skills"]:
+                    info = skills_info.get(skill_id, {"name": "❓ Desconocida"})
+                    st.markdown(f"- {info['name']}")
+
     else:
         st.warning("No hay personajes registrados.", icon=":material/data_alert:")

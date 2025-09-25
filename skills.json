@@ -1,5 +1,6 @@
 {
-  "Ataque físico": {
+  "1": {
+    "name": "Ataque físico",
     "description": "Un ataque básico con armas físicas.",
     "type": "Daño",
     "target": "Único",
@@ -7,7 +8,8 @@
     "rarity": "Primary",
     "source": "General"
   },
-  "Ataque mágico": {
+  "2": {
+    "name": "Ataque mágico",
     "description": "Un poderoso ataque con magia.",
     "type": "Daño",
     "target": "Múltiple",
@@ -15,7 +17,8 @@
     "rarity": "Primary",
     "source": "Class"
   },
-  "Sigilo": {
+  "3": {
+    "name": "Sigilo",
     "description": "Permite ocultarse de enemigos.",
     "type": "Defensa",
     "target": "Propio",
@@ -23,7 +26,8 @@
     "rarity": "Secondary",
     "source": "Class"
   },
-  "Curación": {
+  "4": {
+    "name": "Curación",
     "description": "Restaura puntos de vida.",
     "type": "Cura",
     "target": "Aliado",
@@ -31,7 +35,8 @@
     "rarity": "Primary",
     "source": "Class"
   },
-  "Guardia": {
+  "5": {
+    "name": "Guardia",
     "description": "Aumenta la defensa temporalmente.",
     "type": "Defensa",
     "target": "Propio",
@@ -39,7 +44,8 @@
     "rarity": "Secondary",
     "source": "General"
   },
-  "Invocación": {
+  "6": {
+    "name": "Invocación",
     "description": "Invoca criaturas para el combate.",
     "type": "Daño",
     "target": "Múltiple",
@@ -47,7 +53,8 @@
     "rarity": "Primary",
     "source": "Class"
   },
-  "Esquivar": {
+  "7": {
+    "name": "Esquivar",
     "description": "Aumenta la probabilidad de evitar ataques.",
     "type": "Defensa",
     "target": "Propio",
@@ -55,7 +62,8 @@
     "rarity": "Secondary",
     "source": "General"
   },
-  "Arquería": {
+  "8": {
+    "name": "Arquería",
     "description": "Disparo preciso con arco.",
     "type": "Daño",
     "target": "Único",
@@ -63,7 +71,8 @@
     "rarity": "Primary",
     "source": "Class"
   },
-  "Combate cuerpo a cuerpo": {
+  "9": {
+    "name": "Combate cuerpo a cuerpo",
     "description": "Ataque directo con golpes físicos.",
     "type": "Daño",
     "target": "Único",
