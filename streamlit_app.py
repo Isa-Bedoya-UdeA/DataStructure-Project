@@ -85,7 +85,7 @@ with tab2:
             with st.expander(f"📜 {c['name']} ({c['class']} - {c['race']})", expanded=False):
                 st.write(f"**Clase:** {c['class']}")
                 st.write(f"**Raza:** {c['race']}")
-                st.write(f"**HP:** {c['hp']} | **Energy:** {c['energy']} | **Level:** {c['level']}")
+                st.write(f"**PV:** {c['hp']} | **Energía:** {c['energy']} | **Nivel:** {c['level']}")
                 st.write("**Habilidades:**")
                 for skill_id in c["skills"]:
                     info = skills_info.get(skill_id, {"name": "❓ Desconocida"})
