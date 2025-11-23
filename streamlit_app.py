@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from utils import load_characters, save_character, create_character, validate_name, load_skills
+from search_index import CharacterIndex
 
 skills_info = load_skills()
 skill_ids = list(skills_info.keys())
@@ -81,7 +82,6 @@ with tab1:
         st.write(f"Actualmente hay **{len(characters)}** personajes guardados.")
 
 # ---------------- TAB 2: BUSCAR PERSONAJE ----------------
-from search_index import CharacterIndex
 
 if "character_index" not in st.session_state: # Inicializa el índice una sola vez
     st.session_state.character_index = CharacterIndex()
@@ -146,7 +146,7 @@ with tab2:
             with st.expander(f"📜 {c['name']} ({c['class']} - {c['race']})", expanded=False):
                 st.write(f"**Clase:** {c['class']}")
                 st.write(f"**Raza:** {c['race']}")
-                st.write(f"**HP:** {c['hp']} | **Energy:** {c['energy']} | **Level:** {c['level']}")
+                st.write(f"**PV:** {c['hp']} | **Energía:** {c['energy']} | **Nivel:** {c['level']}")
                 st.write("**Habilidades:**")
                 for skill_id in c["skills"]:
                     info = skills_info.get(skill_id, {"name": "❓ Desconocida"})
