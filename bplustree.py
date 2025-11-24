@@ -160,38 +160,3 @@ class BPlusTree:
             return leaf.values[idx]
 
         return None
-
-    def search_prefix(self, prefix: Any) -> List[dict]:
-        """
-        Return list of values whose normalized key starts with prefix (case-insensitive).
-        It traverses leaf nodes starting from the leaf where prefix would be placed.
-        """
-        results: List[dict] = []
-        normalized_prefix = self._normalize(prefix)
-
-        # start at leaf where prefix would be found/inserted
-        leaf: LeafNode = self._find_leaf(normalized_prefix)
-
-        # find first key in this leaf >= prefix and test startswith
-        idx = 0
-        while idx < len(leaf.keys) and leaf.keys[idx] < normalized_prefix:
-            idx += 1
-
-        # iterate through this leaf and subsequent leaves
-        current = leaf
-        while current:
-            i = idx if current is leaf else 0
-            while i < len(current.keys):
-                k = current.keys[i]
-                if k.startswith(normalized_prefix):
-                    results.extend(current.values[i])
-                elif k > normalized_prefix and not k.startswith(normalized_prefix):
-                    pass
-                i += 1
-            if current.next:
-                current = current.next
-                idx = 0
-            else:
-                break
-
-        return results

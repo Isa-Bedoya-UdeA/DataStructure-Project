@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from utils import load_characters, save_character, create_character, validate_name, load_skills
 from search_index import CharacterIndex
-from functionality_search_bptree import create_characters_bptrees, search_by_class, search_by_race, search_by_name_prefix
+from functionality_search_bptree import create_characters_bptrees, search_by_class, search_by_race 
 
 # ---------------- CARGAR SKILLS ----------------
 skills_info = load_skills()
@@ -173,17 +173,16 @@ with tab2:
 # ============================================================
 with tab3:
     st.subheader("Buscar personaje por Clase / Raza / Nombre (B+ Tree)")
-    st.caption("⚡ Filtrado usando B+ Trees. Puedes combinar criterios (el resultado será la intersección).")
+    st.caption("⚡ Filtrado usando B+ Trees. La búsqueda por nombre es **exacta**.")
 
-    # Ordenamiento
     order_mode = st.selectbox(
         "Ordenar resultados",
         ["A-Z (Nombre)", "Z-A (Nombre)"],
         index=0
     )
 
-    # Inputs
-    name_query = st.text_input("Nombre (prefijo, opcional)", placeholder="Escribe inicio del nombre (ej: Al...)").strip()
+    name_query = st.text_input("Nombre (exacto, opcional)",
+                               placeholder="Escribe el nombre completo").strip()
     class_query = st.selectbox(
         "Clase (opcional)",
         options=[""] + [
@@ -205,22 +204,18 @@ with tab3:
         trees = st.session_state.bptrees
         sets = []
 
-        # name prefix
         if name_query:
-            name_results = search_by_name_prefix(trees["name"], name_query) or []
+            name_results = search_by_name_exact(trees["name"], name_query) or []
             sets.append(name_results)
 
-        # class
         if class_query:
             class_results = search_by_class(trees["class"], class_query) or []
             sets.append(class_results)
 
-        # race
         if race_query:
             race_results = search_by_race(trees["race"], race_query) or []
             sets.append(race_results)
 
-        # no filtros → todos
         if not sets:
             results = load_characters()
             st.success(f"Sin filtros: se muestran {len(results)} personajes.")
@@ -236,14 +231,12 @@ with tab3:
             else:
                 st.success(f"{len(results)} personaje(s) encontrados.")
 
-        # Aplicar orden A-Z / Z-A
         if results:
             if order_mode == "A-Z (Nombre)":
                 results = sorted(results, key=lambda c: c["name"].lower())
             else:
                 results = sorted(results, key=lambda c: c["name"].lower(), reverse=True)
 
-            # Mostrar resultados
             for c in results:
                 with st.expander(f"📜 {c['name']} ({c['class']} - {c['race']})"):
                     st.write(f"**PV:** {c['hp']} | **Energía:** {c['energy']} | **Nivel:** {c['level']}")
