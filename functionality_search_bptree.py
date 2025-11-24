@@ -8,9 +8,6 @@ def create_characters_bptrees() -> Dict[str, BPlusTree]:
     Creates two B+ trees:
       - 'class' -> exact search
       - 'race'  -> exact search
-
-    ⚠️ NO se usa B+ Tree para nombres.
-       La búsqueda por nombre/prefijo pertenece 100% al CharacterIndex (Tab 2).
     """
     characters = load_characters()
 
