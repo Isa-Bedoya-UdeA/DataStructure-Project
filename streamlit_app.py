@@ -172,17 +172,15 @@ with tab2:
 # ----------------- TAB 3: BUSCAR (B+ TREE) -------------------
 # ============================================================
 with tab3:
-    st.subheader("Buscar personaje por Clase / Raza / Nombre (B+ Tree)")
-    st.caption("⚡ Filtrado usando B+ Trees. La búsqueda por nombre es **exacta**.")
+    st.subheader("Buscar personaje por Clase / Raza (B+ Tree)")
+    st.caption("⚡ Filtrado usando B+ Trees.")
 
     order_mode = st.selectbox(
         "Ordenar resultados",
         ["A-Z (Nombre)", "Z-A (Nombre)"],
         index=0
     )
-
-    name_query = st.text_input("Nombre (exacto, opcional)",
-                               placeholder="Escribe el nombre completo").strip()
+    
     class_query = st.selectbox(
         "Clase (opcional)",
         options=[""] + [
@@ -204,10 +202,6 @@ with tab3:
         trees = st.session_state.bptrees
         sets = []
 
-        if name_query:
-            name_results = search_by_name_exact(trees["name"], name_query) or []
-            sets.append(name_results)
-
         if class_query:
             class_results = search_by_class(trees["class"], class_query) or []
             sets.append(class_results)
@@ -216,9 +210,12 @@ with tab3:
             race_results = search_by_race(trees["race"], race_query) or []
             sets.append(race_results)
 
+        # Caso: SIN filtros → devolver todo
         if not sets:
             results = load_characters()
             st.success(f"Sin filtros: se muestran {len(results)} personajes.")
+
+        # Caso: 1 o 2 filtros → intersecar resultados
         else:
             name_sets = [set([c["name"] for c in s]) for s in sets]
             intersect_names = set.intersection(*name_sets) if name_sets else set()
@@ -231,6 +228,7 @@ with tab3:
             else:
                 st.success(f"{len(results)} personaje(s) encontrados.")
 
+        # Mostrar resultados
         if results:
             if order_mode == "A-Z (Nombre)":
                 results = sorted(results, key=lambda c: c["name"].lower())
