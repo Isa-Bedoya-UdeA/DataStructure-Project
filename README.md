@@ -5,6 +5,7 @@
 3. Abrir carpeta en VS code
 4. Abrir terminal
 5. Instalar dependencias con `uv sync` (añadiendo el path), o usar `python -m uv sync`
-6. Correr proyecto con `streamlit run streamlit_app.py`. En caso de error, ejecutar primero `.\.venv\Scripts\Activate.ps1` y `python -m streamlit run streamlit_app.py`
-7. Abrir url de localhost para visualizar pagina
-8. Dar clic en boton de Rerun(dentro de la pagina) para recargar la pagina cada que se hagan cambios en el script de python
+6. `pip install streamlit`
+7. Correr proyecto con `streamlit run streamlit_app.py`. En caso de error, ejecutar primero `.\.venv\Scripts\Activate.ps1` y `python -m streamlit run streamlit_app.py`
+8. Abrir url de localhost para visualizar pagina
+9. Dar clic en boton de Rerun(dentro de la pagina) para recargar la pagina cada que se hagan cambios en el script de python
