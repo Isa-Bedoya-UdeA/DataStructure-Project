@@ -16,7 +16,7 @@ st.header("Gestor de Personajes RPG")
 
 # -------------------- B+ TREE (solo se crea UNA VEZ) --------------------
 if "bptrees" not in st.session_state:
-    # bptrees is a dict with keys: 'class', 'race', 'name'
+    # bptrees is a dict with keys: 'class', 'race'
     st.session_state.bptrees = create_characters_bptrees()
 
 # -------------------- Character Index (solo se carga una vez) --------------------
@@ -180,7 +180,7 @@ with tab3:
         ["A-Z (Nombre)", "Z-A (Nombre)"],
         index=0
     )
-    
+
     class_query = st.selectbox(
         "Clase (opcional)",
         options=[""] + [

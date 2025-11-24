@@ -1,12 +1,10 @@
 from typing import Optional, List, Tuple, Any
 
-
 class Node:
     def __init__(self, order: int) -> None:
         self.order = order
         self.keys: List[str] = []
         self.parent: Optional["Node"] = None
-
 
 class LeafNode(Node):
     def __init__(self, order) -> None:
