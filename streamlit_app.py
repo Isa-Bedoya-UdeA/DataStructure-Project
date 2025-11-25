@@ -103,8 +103,8 @@ with tab1:
                     if "character_index" in st.session_state:
                         st.session_state.character_index.reload()
 
-                    st.session_state.bptree_class = create_characters_bptree()
-                    st.session_state.bptree_race = create_characters_race_bptree()
+                    # st.session_state.bptree_class = create_characters_bptrees()
+                    # st.session_state.bptree_race = create_characters_race_bptree()
 
                     st.success("¡Personaje creado exitosamente!")
                     st.json(character)
