@@ -35,7 +35,7 @@ if "last_query" not in st.session_state:
 tab1, tab2, tab3 = st.tabs([
     "⚔️ Crear personaje",
     "🔍 Buscar personaje",
-    "🌳 Buscar por clase / raza / nombre (B+ Tree)"
+    "🌳 Buscar con filtros (B+ Tree)"
 ])
 
 # ============================================================
